@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Home } from '@styled-icons/boxicons-solid/Home'
+import { HomeHeart as Home } from '@styled-icons/boxicons-solid/HomeHeart'
 import { SearchAlt2 as Search } from '@styled-icons/boxicons-regular/SearchAlt2'
 import { UpArrowAlt as Arrow } from '@styled-icons/boxicons-regular/UpArrowAlt'
 import { Bulb as Light } from '@styled-icons/boxicons-regular/Bulb'
