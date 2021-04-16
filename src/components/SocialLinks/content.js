@@ -2,7 +2,7 @@ const handle = 'Stauros'
 
 const links = [
     {
-        label: 'WhatsAppSquare',
+        label: 'WhatsappSquare',
         url: `https://wa.me/message/SOCRNECJPO3SA1/${handle}`
     }
 ]
