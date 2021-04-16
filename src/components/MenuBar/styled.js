@@ -3,7 +3,7 @@ import {Link} from 'gatsby'
 
 export const MenuBarWrapper = styled.aside`
 align-items: center;
-background: #192734;
+background: #172433;
 border-left: 1px solid #38444d;
 diplay: flex;
 flex-direction: colum;
@@ -30,4 +30,10 @@ cursor: pointer;
 display: block;
 height: 3.75rem;
 padding: 1.1rem;
+position: relative;
+  width: 3.75rem;
+  
+  &:hover {
+    color: #1fa1f2;
+  }
 `
