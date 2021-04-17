@@ -26,7 +26,7 @@ export const PostItemTag = styled.div`
   color: #fff;
   display: flex;
   font-size: 1.3rem;
-  font-weight: 700;
+  font-weight: 500;
   justify-content: center;
   min-height: 90px;
   min-width: 90px;
