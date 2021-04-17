@@ -28,7 +28,7 @@ const GlobalStyles = createGlobalStyle`
   /* HTML5 display-role reset for older browsers */
   article, aside, details, figcapion, figure,
   footer, header, hgroup, menu, nav, section {
-      display: inline-flex;
+      display: block;
   }
   body {
       line-height: 1;
@@ -43,7 +43,7 @@ const GlobalStyles = createGlobalStyle`
       content: '';
       content: none;
   }
-  table {
+  table {content-box
       border-collpase: collapse;
       border-spacing: 0;
   }

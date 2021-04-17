@@ -15,18 +15,18 @@ export const PostItemWrapper = styled.section`
   aling-items: center;
   border-bottom: 1px solid #38444d;
   display: flex;
-  padding: 2rem 3rem;
+  padding: 2rem 9rem;
   width: 100%;
 `
 
 export const PostItemTag = styled.div`
   align-items: center;
-  background: ${props => props.background};
-  border-radius: 50%;
+  background: ${props => props.background ? props.background :  '#1fa1f2'};
+  border-radius: 30%;
   color: #fff;
   display: flex;
   font-size: 1.3rem;
-  font-weight: 500;
+  font-weight: 700;
   justify-content: center;
   min-height: 90px;
   min-width: 90px;
@@ -52,6 +52,6 @@ export const PostItemTitle = styled.h1`
 
 export const PostItemDescription = styled.p`
   font-size: 1.2rem;
-  font-weight: 300;
+  font-weight: 500;
   line-height: 1.2;
 `

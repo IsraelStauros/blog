@@ -4,7 +4,7 @@ import {Link} from 'gatsby'
 export const ProfileWrapper = styled.section`
 color: #8899a6;
 display: flex;
-flex-direction: colum;
+flex-direction: column;
 `
 
 export const ProfileLink = styled(Link)`
@@ -17,13 +17,13 @@ transition: color 8,5s;
 }
 `
 export const ProfileAuthor = styled.h1`
-font-size: 1.6rem;
-margin: 0.5rem auto 1.5rem;
+font-size: 1.5rem;
+margin: 1.5rem auto 1.5rem;
 `
 
 export const ProfilePosition = styled.small`
 display: block;
-font-size: 1.2rem;
+font-size: 1.5rem;
 font-weight: 300;
 `
 
