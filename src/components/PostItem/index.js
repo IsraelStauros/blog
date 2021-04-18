@@ -1,10 +1,11 @@
 import React from 'react'
-import PropTypes from 'Prop-types'
+import PropTypes from 'prop-types'
 
 import * as S from './styled'
 
 const PostItem = ({
   slug,
+  background,
   category,
   date,
   timeToRead,
@@ -13,7 +14,7 @@ const PostItem = ({
   }) => (
 <S.PostItemLink to={slug}>
   <S.PostItemWrapper>
-    <S.PostItemTag background=" #1fa1f2">(category)</S.PostItemTag>
+    <S.PostItemTag background={background}>{category}</S.PostItemTag>
     <S.PostItemInfo>
       <S.PostItemDate>
         {date} | {timeToRead}min de leitura
@@ -29,11 +30,11 @@ const PostItem = ({
 </S.PostItemLink>
 )
 
-PostIem.propTypes ={
+PostItem.propTypes ={
   slug: PropTypes.string.isRequired,
-  background: PropTypes. string,
+  background: PropTypes.string,
   category: PropTypes.string.isRequired,
-  date:PropTypes.string.isRequired,
+  date: PropTypes.string.isRequired,
   timetoRead: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
