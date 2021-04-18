@@ -27,18 +27,9 @@
     "styled-components": "^5.2.3",
     "styled-icons": "^10.33.0"
   },
-  "devDependencies": {
-<<<<<<< HEAD
-=======
-    "@babel/plugin-proposal-optional-chaining": "^7.13.12",
-    "@babel/plugin-syntax-class-properties": "^7.12.13",
->>>>>>> d9dc0da12a2bcef229355870b427cfd68753b3ce
-    "@babel/preset-react": "^7.13.13",
-    "prettier": "2.2.1"
-  },
-  "keywords": [
-    "gatsby"
-  ],
+  
+    
+
   "license": "0BSD",
   "scripts": {
     "build": "gatsby build",
