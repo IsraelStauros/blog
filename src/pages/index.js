@@ -2,7 +2,7 @@ import * as React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 
 import Layout from "../components/Layout"
-import Seo from "../components/seo.js"
+import SEO from "../components/seo.js"
 import PostItem from '../components/PostItem'
 
 const IndexPage = () => {

@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `Israel Stauros`,
     position: 'Front-end Developer',
-    description: `Um site sobre o mundo front end e outras coisitas mais!`,
+    description: `Um site sobre o mundo front end!`,
     author: `@Israel Stauros`,
   },
   plugins: [
