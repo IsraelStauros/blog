@@ -1,0 +1,12 @@
+ 
+        
+             
+                {
+                    "type": "pwa-edge",
+                    "name": "http://localhost:8000/",
+                    "request": "launch",
+                    "url": "http://localhost:8000/"
+                }
+            
+        
+
