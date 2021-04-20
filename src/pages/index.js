@@ -3,7 +3,7 @@ import { useStaticQuery, graphql } from "gatsby"
 
 import Layout from "../components/Layout"
 import Seo from "../components/seo.js"
-import PostItem from '../components/PostItem'
+import PostItem from "../components/PostItem"
 
 const IndexPage = () => {
   const { allMarkdownRemark } = useStaticQuery(graphql`
