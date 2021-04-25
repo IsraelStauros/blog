@@ -15,10 +15,17 @@ const BlogPost = ({ data }) => {
 export const query = graphql`
   query Post($slug: String!) {
     markdownRemark(fields: { slug: { eq: $slug } }) {
+      fields {
+        slug
+      }
       frontmatter {
         title
+        description
+        date(locale: "pt-br", formatString: "DD [de] MMMM [de] YYYY")
+       
       }
       html
+      timeToRead
     }
   }
 `

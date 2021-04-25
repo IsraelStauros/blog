@@ -1,5 +1,6 @@
-const path = require('path')
-const { createFilePath } = require("gatsby-source-filesystem")
+const path = require("path")
+const { createFilePath } = require(`gatsby-source-filesystem`)
+
 
 exports.onCreateNode = ({ node, getNode, actions }) => {
   const { createNodeField } = actions
@@ -12,6 +13,7 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
       basePath: "pages",
     })
 
+    
     createNodeField({
       node,
       name: "slug",
@@ -23,55 +25,53 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
 exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions
   return graphql(`
-  {
-    allMarkdownRemark(sort: {fields: frontmatter___date, order: DESC}) {
-      edges {
-        node {
-          fields {
-            slug
+    {
+      allMarkdownRemark(sort: { fields: frontmatter___date, order: DESC }) {
+        edges {
+          node {
+            fields {
+              slug
+            }
+            frontmatter {
+              background
+              category
+              date(locale: "pt-br", formatString: "DD [de] MMMM [de] YYYY")
+              description
+              title
+            }
+            timeToRead
           }
-          frontmatter {
-            background
-            category
-            date(formatString: "DD [de] MMMM [de] YYYY", locale: "pt-br")
-            description
-            title
-          }
-          timeToRead
         }
       }
     }
-  }
   `).then(result => {
-    const posts = result.data.allmMarkdownRemark.edges
-    
+    const posts = result.data.allMarkdownRemark.edges
+
     posts.forEach(({ node }) => {
       createPage({
         path: node.fields.slug,
-        component: path.resolve("./src/templates/blog-post.js"),
+        component: path.resolve(`./src/templates/blog-post.js`),
         context: {
-          slug: node.fields.slug
+          
+          slug: node.fields.slug,
         },
       })
     })
 
     const postsPerPage = 6
-    const numPages = Math.ceil (posts.length / postsPerPage)
+    const numPages = Math.ceil(posts.length / postsPerPage)
 
-    Array.from({ length: numPages}).forEach((_, index) => {
+    Array.from({ length: numPages }).forEach((_, index) => {
       createPage({
         path: index === 0 ? `/` : `/page/${index + 1}`,
         component: path.resolve(`./src/templates/blog-list.js`),
         context: {
-          limite: postPerPage,
-          skip: index + postPerPage,
+          limit: postsPerPage,
+          skip: index * postsPerPage,
           numPages,
-          currenPage: index + 1
-
-        }
-
+          currentPage: index + 1,
+        },
       })
-
     })
   })
 }
