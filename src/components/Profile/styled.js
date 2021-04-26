@@ -10,20 +10,20 @@ flex-direction: column;
 export const ProfileLink = styled(Link)`
 color: #8899a6;
 text-decoration: none;
-transition: color 8,5s;
+transition: color 0,5s;
 
 &:hover {
     color: #1fa1f2
 }
 `
 export const ProfileAuthor = styled.h1`
-font-size: 1.5rem;
-margin: 1.5rem auto 1.5rem;
+font-size: 1.6rem;
+margin: 0.5rem auto 1.5rem;
 `
 
 export const ProfilePosition = styled.small`
 display: block;
-font-size: 1.5rem;
+font-size: 1.2rem;
 font-weight: 300;
 `
 
