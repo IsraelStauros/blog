@@ -2,6 +2,7 @@
 date: 2015-04-17 05:54:23
 title: Lorem lorem ipsum
 description: And I'm lorem sure lorem
+image: /src/assets/image/activello.png
 category: JS
 background: "red"
 ---
@@ -18,6 +19,8 @@ puts a
 ## Fusce a metus eu
 
 Pellentesque `sed` sapien lorem, at lacinia urna. In hac habitasse platea dictumst. Vivamus vel justo in leo laoreet ullamcorper non vitae lorem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin bibendum ullamcorper rutrum.
+
+![Template de site para wordpress](src/assets/img/Talon.png)
 
 > Proin ornare ligula eu tellus tempus elementum. Aenean bibendum iaculis mi, nec blandit lacus interdum vitae. Vestibulum non nibh risus, a scelerisque purus. Ut vel arcu ac tortor adipiscing hendrerit vel sed massa. Fusce sem libero, lacinia vulputate interdum non, porttitor non quam. Aliquam sed felis ligula. Duis non nulla magna.
 

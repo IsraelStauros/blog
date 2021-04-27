@@ -2,12 +2,20 @@ module.exports = {
   siteMetadata: {
     title: `Israel Stauros`,
     position: `Front-end Developer`,
-    description: `Blog construído usando Gatsby, Graphql e outras coisas mais. Visite meu portfólio.`,
+    description: `Site construído utilizando Gatsby, Graphql e outras coisas mais. Conheça meu portfólio.`,
     author: `Stauros Development`,
   },
   plugins: [
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-react-helmet`,
+ 
+      {resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `uploads`,
+        path: `${__dirname}/src/static/assets/img`,
+    },
+  },
+    
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -25,7 +33,22 @@ module.exports = {
     {
       resolve: `gatsby-transformer-remark`,
       options: {
-        plugins: [],
+        plugins: [
+          {
+            resolve: "gatsby-remark-relative-images-v2",
+            options: {
+              name: "uploads",
+            },
+          },
+          {
+            resolve: "gatsby-remark-images",
+            options: {
+              maxWidth: 960,
+              linkImagesToOriginal: false,
+            },
+          },
+          `gatsby-remark-lazy-load`,
+        ],
       },
     },
     `gatsby-transformer-sharp`,
