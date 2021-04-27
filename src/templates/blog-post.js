@@ -5,8 +5,13 @@ import Layout from "../components/Layout"
 import Seo from "../components/seo"
 import * as S from "../components/Post/styled"
 
-const BlogPost = ({ data }) => {
+import RecommendedPosts from "../components/RecommendedPosts"
+import Comments from "../components/Comments"
+
+const BlogPost = ({ data, pageContext }) => {
   const post = data.markdownRemark
+  const next = pageContext.nextPost
+  const previous = pageContext.previousPost
 
   return (
     <Layout>
@@ -22,6 +27,8 @@ const BlogPost = ({ data }) => {
       </S.PostHeader>
       <S.MainContent>
         <div dangerouslySetInnerHTML={{ __html: post.html }}></div>
+        <RecommendedPosts next={next} previous={previous} />
+        <Comments url={post.fields.slug} title={post.frontmatter.title} />
       </S.MainContent>
 
     </Layout>
