@@ -14,15 +14,15 @@ const Profile = () => {
           title
           position
           description
-      }  
+      }
     }
 }
-    
+
 `)
 return (
   <S.ProfileWrapper>
     <S.ProfileLink>
-    
+
       <Avatar />
         <S.ProfileAuthor>
           {title}
@@ -31,7 +31,7 @@ return (
         <S.ProfileDescription>{description}</S.ProfileDescription>
 
     </S.ProfileLink>
-        
+
 
   </S.ProfileWrapper>
 )
