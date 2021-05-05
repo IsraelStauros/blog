@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from "styled-components"
 
 export const SocialLinksWrapper = styled.nav`
 margin: 2rem auto;
@@ -15,12 +15,12 @@ list-style: none;
 export const SocialLinksItem = styled.li``
 
 export const SocialLinksLink = styled.a`
-color: #8899a6;
+color:var(--texts);
 text-decoration: none;
 transition: color 0.5s;
 
 &:hover {
-    color: #1fa1f2
+    color:var(--highlight)
 }
 `
 

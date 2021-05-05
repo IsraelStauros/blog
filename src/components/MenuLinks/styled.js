@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from "styled-components"
 import { Link } from 'gatsby'
 
 export const MenuLinksWrapper = styled.nav``
@@ -12,17 +12,17 @@ export const MenuLinksItem = styled.li`
 
 
    .active {
-       color: #1fa1f2;
+       color:var(--highlight);
    }
 `
 
 export const MenuLinksLink = styled(Link)`
-   color: #8899a6;
+   color:var(--texts);
    text-decoration: none;
    transition: color 0.5s;
 
    &:hover {
-       color: #1fa1f2;
+       color:var(--highlight);
    }
 `
 
