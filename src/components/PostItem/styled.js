@@ -1,10 +1,14 @@
 import styled from "styled-components"
 import {Link} from 'gatsby'
-
+import media from "styled-media-query"
 export const PostItemLink = styled(Link)`
   color:var(--texts);
   display: flex;
   text-decoration: none;
+
+  body#grid & {
+    background-color: var(--background);
+  }
 
   &:hover {
     color:var(--highlight);
@@ -13,24 +17,51 @@ export const PostItemLink = styled(Link)`
 
 export const PostItemWrapper = styled.section`
   aling-items: center;
-  border-bottom: 1px solidvar(--borders);
+  border-bottom: 1px solid var(--borders);
   display: flex;
   padding: 2rem 3rem;
   width: 100%;
+
+  body#grid & {
+    border: none;
+    padding: 2rem 1rem;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  ${media.lessThan("large")`
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 2rem 1rem;
+  `}
 `
 
 export const PostItemTag = styled.div`
-  align-items: center;
-  background: ${props => props.background ? props.background :  '#1fa1f2'};
-  border-radius: 50%;
-  color:var(--postColor);
-  display: flex;
-  font-size: 1.3rem;
-  font-weight: 700;
-  justify-content: center;
-  min-height: 90px;
-  min-width: 90px;
-  text-transform: uppercase;
+align-items: center;
+background: ${props =>
+  props.background ? props.background : "var(--highlight)"};
+border-radius: 50%;
+color: #fff;
+display: flex;
+font-size: 1.3rem;
+font-weight: 700;
+justify-content: center;
+min-height: 90px;
+min-width: 90px;
+text-transform: uppercase;
+
+  ${media.lessThan("large")`
+    border-radius: 0;
+    font-size: 1rem;
+    min-height: auto;
+    min-width: auto;
+    padding: .2rem .5rem;
+    margin-bottom: .7rem;
+  `}
+
+  body#grid & {
+    margin-bottom: 1.5rem;
+  }
 
 `
 
@@ -38,6 +69,15 @@ export const PostItemInfo = styled.div`
   display: flex;
   flex-direction: column;
   margin-left: 1.5rem;
+
+  ${media.lessThan("large")`
+  margin: 0;
+`}
+
+  body#grid & {
+    line-height: 1.1;
+    margin: 0.8rem 0;
+  }
 `
 
 export const PostItemDate = styled.time`

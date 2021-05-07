@@ -63,8 +63,8 @@ const GlobalStyles = createGlobalStyle`
   	height: auto;
   }
 
-  body{
-    --borders: #eb0267;
+  body.dark{
+    --borders: #000000;
     --texts: #8899a6;
     --postColor: #fff;
     --highlight: #00fff7;
@@ -74,15 +74,15 @@ const GlobalStyles = createGlobalStyle`
     --black: #222;
   }
 
-  body.light {
-    --borders: #dedede;
-    --postColor: #111;
-    --texts: #555555;
-    --highlight: #1fa1f2;
-    --mediumBackground: #f0f0f3;
-    --background: #fff;
+  body.flash {
+    --borders: #fff;
+    --postColor: #ffffff;
+    --texts: #ffffff;
+    --highlight: #fa3e6d;
+    --mediumBackground: #6d04b8;
+    --background: #54068c;
     --white: #fff;
-    --black: #222;
+    --black: #111;
   }
 `
 export default GlobalStyles
