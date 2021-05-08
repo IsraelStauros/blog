@@ -42,7 +42,7 @@ export const SearchWrapper = styled.section`
       border-bottom: 1px solid var(--borders);
       border-top: 1px solid var(--borders);
       display: grid;
-      grid-area: posts;
+      grid-area: card;
       grid-gap: 1px;
       grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
       margin-top: 2rem;

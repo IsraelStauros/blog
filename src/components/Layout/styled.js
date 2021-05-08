@@ -6,6 +6,10 @@ export const LayoutWrapper = styled.section`
 
     ${media.lessThan("large")`
     flex-direction: column;
+
+    ${media.greaterThan("large")`
+    padding: 0 3.75rem 0 20rem;
+  `}
   `}
 `
 

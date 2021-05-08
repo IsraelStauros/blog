@@ -5,11 +5,9 @@ export const PostItemLink = styled(Link)`
   color:var(--texts);
   display: flex;
   text-decoration: none;
-
   body#grid & {
     background-color: var(--background);
   }
-
   &:hover {
     color:var(--highlight);
   }
@@ -21,14 +19,12 @@ export const PostItemWrapper = styled.section`
   display: flex;
   padding: 2rem 3rem;
   width: 100%;
-
   body#grid & {
     border: none;
     padding: 2rem 1rem;
     flex-direction: column;
     justify-content: center;
   }
-
   ${media.lessThan("large")`
     align-items: flex-start;
     flex-direction: column;
@@ -49,7 +45,6 @@ justify-content: center;
 min-height: 90px;
 min-width: 90px;
 text-transform: uppercase;
-
   ${media.lessThan("large")`
     border-radius: 0;
     font-size: 1rem;
@@ -58,22 +53,19 @@ text-transform: uppercase;
     padding: .2rem .5rem;
     margin-bottom: .7rem;
   `}
-
   body#grid & {
     margin-bottom: 1.5rem;
+    width: 20%;
   }
-
 `
 
 export const PostItemInfo = styled.div`
   display: flex;
   flex-direction: column;
   margin-left: 1.5rem;
-
   ${media.lessThan("large")`
   margin: 0;
 `}
-
   body#grid & {
     line-height: 1.1;
     margin: 0.8rem 0;
