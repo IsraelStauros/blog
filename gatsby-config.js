@@ -11,7 +11,7 @@ module.exports = {
     position: `Estudante`,
     description: `Projeto utilizando Gatsby, Graphql e outras coisas mais.`,
     author: `Stauros`,
-    siteUrl:`https://johndoe.com.br` ,
+    siteUrl:`http://localhost:9000` ,
   },
   plugins: [
     `gatsby-plugin-transition-link`,
@@ -64,7 +64,7 @@ module.exports = {
     `gatsby-plugin-image`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
-    `gatsby-plugin-smoothscroll`,
+    
     
       {
         resolve: `gatsby-plugin-algolia-search`,
