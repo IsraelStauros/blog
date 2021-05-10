@@ -4,7 +4,7 @@ title: Lorem lorem ipsum
 description: And I'm lorem sure lorem
 image: /src/assets/image/activello.png
 category: JS
-background: "red"
+background: "#D6BA32"
 ---
 
 # Lorem ipsum

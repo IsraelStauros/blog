@@ -7,11 +7,11 @@ const path = require('path'); require('dotenv').config({ path: path.resolve(__di
 
 module.exports = {
   siteMetadata: {
-    title: `Israel Stauros`,
+    title: `Israel`,
     position: `Estudante`,
-    description: `Projeto utilizando Gatsby, Graphql e outras coisas mais.`,
-    author: `Stauros`,
-    siteUrl:`http://localhost:9000` ,
+    description: `Esse é um blog construído com Gatsby, Graphql e outras coisas mais.`,
+    author: `Israel`,
+    siteUrl:`https://staurosdevelopment.tk` ,
   },
   plugins: [
     `gatsby-plugin-transition-link`,
@@ -94,5 +94,6 @@ module.exports = {
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
      `gatsby-plugin-offline`,
+     `gatsby-plugin-netlify-cms`,
   ],
 }

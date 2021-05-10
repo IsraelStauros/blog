@@ -2,7 +2,7 @@
 date: 2022-11-12 04:23:06
 title: Holodomor
 description: A grande fome ucraniana
-category: Hist
+category: MISC
 background: "#7AAB13"
 ---
 

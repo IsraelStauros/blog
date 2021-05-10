@@ -1,0 +1,47 @@
+
+backend:
+  name: github
+  repo: IsraelStauros/blog
+  branch: main
+  site_domain: staurosdevelopment.tk
+  publish_mode: editorial_workflow
+  media_folder: "static/assets/img"
+  public_folder: "assets/img"
+
+collections:
+  - name: "posts"
+    label: "Posts"
+    folder: "posts"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Description", name: "description", widget: "string" }
+      - {
+          label: "Date",
+          name: "date",
+          widget: "datetime",
+          format: "YYYY-MM-DD hh:mm:ss",
+        }
+      - { label: "image", name: "thumbnail", widget: "image" }
+      - {
+        label: "Category",
+        name: "category",
+        widget: "select",
+        options: ["jekyll", "css", "js", "html", "svg", "dev", "misc"]
+      }
+      - {
+        label: "Background",
+        name: "background",
+        widget: "select",
+        options: [
+          { label: "JEKYLL", value: "#B31917" },
+          { label: 'CSS', value: '#2DA0C3' },
+          { label: 'JS', value: '#D6BA32' },
+          { label: 'HTML', value: '#EB7728' },
+          { label: 'SVG', value: '#7D669E' },
+          { label: 'DEV', value: '#637a91' },
+          { label: 'MISC', value: '#7AAB13' },
+        ]
+      }
+      - { label: "Body", name: "body", widget: "markdown" }

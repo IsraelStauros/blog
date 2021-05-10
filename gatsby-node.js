@@ -1,11 +1,7 @@
-
-
-
-
 const path = require("path")
 const { createFilePath } = require(`gatsby-source-filesystem`)
 
-exports.sourceNodes = ({ actions, schema }) => {
+exports.sourceNodes = ({ actions,  }) => {
   const { createTypes } = actions
  
   createTypes(`
@@ -18,7 +14,7 @@ exports.sourceNodes = ({ actions, schema }) => {
   `)
 }
 
-exports.sourceNodes = ({actions, schema}) => {
+exports.sourceNodes = ({actions, }) => {
   const {createTypes} = actions
 
   createTypes(`
