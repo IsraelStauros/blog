@@ -18,12 +18,19 @@ module.exports = {
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-react-helmet`,
  
-      {resolve: `gatsby-source-filesystem`,
+      {
+        resolve: `gatsby-source-filesystem`,
       options: {
         name: `uploads`,
         path: `${__dirname}/src/static/assets/img`,
     },
   },
+    {
+      resolve: `gatsby-plugin-disqus`,
+      options: {
+        shortname: `https-staurosdevelopment-tk`
+    }
+    },
     
     {
       resolve: `gatsby-source-filesystem`,

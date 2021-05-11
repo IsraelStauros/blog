@@ -1,45 +1,36 @@
 import React from 'react'
-import {useStaticQuery, graphql} from 'gatsby'
+import PropTypes from 'prop-types'
+
 import Avatar from '../Avatar'
 import * as S from './styled'
 
 
-const Profile = () => {
-  const {
-    site: {
-      siteMetadata: { title, position, description},
-    },
-    } = useStaticQuery(graphql`
-    query MySiteMetadata {
-    site {
-      siteMetadata {
-          title
-          position
-          description
-      }
-    }
-}
 
-`)
-return (
-  <S.ProfileWrapper>
-    <S.ProfileLink to="/" cover
-          direction= "left"
-          bg="var(--background)"
-          duration= {0.6}>
-
-      <Avatar />
+const Profile = ({ title, position, description, isMobileHeader }) => {
+  return (
+    <S.ProfileContainer isMobileHeader={isMobileHeader}>
+      <S.ProfileLink
+        to="/"
+        cover
+        duration={0.6}
+        direction="left"
+        bg= "var(--background)"
+      >
+        <Avatar />
         <S.ProfileAuthor>
           {title}
           <S.ProfilePosition>{position}</S.ProfilePosition>
         </S.ProfileAuthor>
-        <S.ProfileDescription>{description}</S.ProfileDescription>
+      </S.ProfileLink>
+      <S.ProfileDescription>{description}</S.ProfileDescription>
+    </S.ProfileContainer>
+  )
+}
 
-    </S.ProfileLink>
-
-
-  </S.ProfileWrapper>
-)
+Profile.propTypes = {
+  title: PropTypes.string.isRequired,
+  position: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired
 }
 
 export default Profile
