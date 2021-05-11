@@ -73,3 +73,4 @@ export const SearchWrapper = styled.section`
     display: none;
   }
 `
+

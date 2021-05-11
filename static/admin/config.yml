@@ -4,9 +4,10 @@ backend:
   repo: IsraelStauros/blog
   branch: main
   site_domain: staurosdevelopment.tk
-  publish_mode: editorial_workflow
-  media_folder: "static/assets/img"
-  public_folder: "assets/img"
+  
+publish_mode: editorial_workflow
+media_folder: "static/assets/img"
+public_folder: "assets/img"
 
 collections:
   - name: "posts"
@@ -38,7 +39,7 @@ collections:
           { label: "JEKYLL", value: "#B31917" },
           { label: 'CSS', value: '#2DA0C3' },
           { label: 'JS', value: '#D6BA32' },
-          { label: 'HTML', value: '#EB7728' },
+          { label: 'HTML', value: #fc3f05 },
           { label: 'SVG', value: '#7D669E' },
           { label: 'DEV', value: '#637a91' },
           { label: 'MISC', value: '#7AAB13' },

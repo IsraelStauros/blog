@@ -22,7 +22,7 @@ module.exports = {
         resolve: `gatsby-source-filesystem`,
       options: {
         name: `uploads`,
-        path: `${__dirname}/src/static/assets/img`,
+        path: `${__dirname}/static/assets/img`,
     },
   },
     {
@@ -30,6 +30,14 @@ module.exports = {
       options: {
         shortname: `https-staurosdevelopment-tk`
     }
+    },
+    {
+      resolve: "gatsby-plugin-social9-socialshare",
+      options: {
+        content:  "d58dc743e0da497da2cfcfcbdf77fd75",
+        async: true,
+        defer: true
+      }
     },
     
     {

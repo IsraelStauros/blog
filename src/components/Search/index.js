@@ -6,6 +6,11 @@ import { InstantSearch, SearchBox, Hits, Stats } from "react-instantsearch-dom"
 import Hit from "./Hit"
 import * as S from "./styled"
 
+
+
+
+
+
 const Search = ({ algolia }) => {
   const searchClient = algoliasearch(algolia.appId, algolia.searchOnlyApiKey)
 
@@ -22,7 +27,10 @@ const Search = ({ algolia }) => {
           }}
         />
         <Hits hitComponent={Hit} />
+
       </InstantSearch>
+
+
     </S.SearchWrapper>
   )
 }
