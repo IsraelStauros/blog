@@ -24,7 +24,7 @@ const MenuLinks = ({ setIsMenuOpen, isMenuOpen }) => {
         {links.map((link, i) => (
           <S.MenuLinksItem key={i}>
             <AniLink
-              fade
+              cover
               direction="left"
               bg="var (--background)"
               to={link.url}

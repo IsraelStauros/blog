@@ -42,7 +42,7 @@ const MenuBar = ({ setIsMenuOpen, isMenuOpen }) => {
       <S.MenuBarGroup>
       <S.MenuBarLink
           to="/"
-          fade
+          cover
           direction="right"
           bg="var (--background)"
           duration={0.6}
@@ -54,7 +54,7 @@ const MenuBar = ({ setIsMenuOpen, isMenuOpen }) => {
         </S.MenuBarLink>
         <S.MenuBarLink
           to="/search/"
-          fade
+          cover
           direction="right"
           bg= "var (--background)"
           duration={0.6}
