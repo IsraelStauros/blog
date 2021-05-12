@@ -8,15 +8,20 @@ const links = [
       },
 
       {
-        label: "Facebook",
+        label: "SocialFacebook",
         url: `https://www.facebook.com/stauroswebdevelopment`,
 
       },
 
       {
-        label: "InstagramSquare",
+        label: "SocialInstagram",
         url: `https://www.instagram.com/stauroswd/`,
 
+      },
+
+      {
+        label: "SocialGithub",
+        url: `https://github.com/IsraelStauros/blog`
       },
 
       {
