@@ -100,7 +100,7 @@ export const MainContent = styled.section`
   }
 
   p {
-    margin: 0 auto 1.6rem;
+    margin: 1.6rem auto 1.6rem;
   }
 
   h1,
@@ -130,12 +130,13 @@ export const MainContent = styled.section`
   li {
     code {
       word-wrap: break-word;
+
     }
   }
 
   img {
     display: block;
-    width: auto;
+    width: 50%;
     max-width: 100%;
     margin: 1.875rem auto;
   }

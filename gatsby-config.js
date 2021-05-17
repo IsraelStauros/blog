@@ -8,7 +8,7 @@ const path = require('path'); require('dotenv').config({ path: path.resolve(__di
 module.exports = {
   siteMetadata: {
     title: `Israel`,
-    position: `Estudante`,
+    position: `Front-end Developer`,
     description: `Esse é um blog construído com Gatsby, Graphql e outras coisas mais.`,
     author: `Israel`,
     siteUrl:`https://staurosdevelopment.tk` ,
