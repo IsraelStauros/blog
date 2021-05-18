@@ -138,7 +138,12 @@ export const MainContent = styled.section`
     display: block;
     width: 50%;
     max-width: 100%;
-    margin: 1.875rem auto;
+    margin: 1.8 75rem auto;
+    padding: 1rem;
+
+    ${media.lessThan('large')`
+    padding: 1rem;
+  `}
   }
 
   iframe {
