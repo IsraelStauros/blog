@@ -25,7 +25,8 @@ const links = [
       },
 
       {
-        label: "Pages"
+        label: "Pages",
+        url: `https://staurosdevelopment.tk/`
 
     },
 ]

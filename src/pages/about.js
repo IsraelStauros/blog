@@ -13,7 +13,7 @@ const AboutPage = () => (
       description="Página que conta um pouco da história do autor desse blog"
     />
     <MainContent>
-      <h1>O Developer</h1>
+      <h1>O AUTOR</h1>
       <StaticImage
           src="../images/foto-de-perfil.jpg"
           alt="Foto do autor do blog"

@@ -28,7 +28,7 @@
    const metaDescription = description || site.siteMetadata.description
 
    const ogImage =
-     image || 'https://staurosdevelopment.tk/assets/img/logo.png'
+     image || 'https://israelstauros.tk/assets/img/logo.png'
 
    return (
      <Helmet

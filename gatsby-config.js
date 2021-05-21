@@ -11,7 +11,7 @@ module.exports = {
     position: `Front-end Developer`,
     description: `Esse é um blog construído com Gatsby, Graphql e outras coisas mais.`,
     author: `Israel`,
-    siteUrl:`https://staurosdevelopment.tk` ,
+    siteUrl:`https://israelstauros.tk` ,
   },
   plugins: [
     `gatsby-plugin-transition-link`,
