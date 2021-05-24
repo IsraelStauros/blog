@@ -6,6 +6,7 @@ const path = require('path'); require('dotenv').config({ path: path.resolve(__di
 
 
 module.exports = {
+  flags: {PRESERVE_WEBPACK_CACHE: true},
   siteMetadata: {
     title: `Israel`,
     position: `Front-end Developer`,
