@@ -59,7 +59,6 @@ A idéia de uma LandingPage é muito simples.
 O cliente saberá de tudo o que precisa saber no menor tempo possível, e você oferta uma oportunidade única e incrivelmente vantajosa.
 Assim o cliente economiza tempo indo direto ao ponto, e você faz prospecção com maior qualidade.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/ZJpeMczm-s0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Agora você conhece os principais tipos de páginas web.
 Caso você queira nossa ajuda profissional para tirar seu projeto do papel, veja a [oferta](https://staurosdevelopment.tk) especial que preparamos para você.
