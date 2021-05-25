@@ -7,3 +7,5 @@ background: "#2DA0C3"
 ---
 # Conheça essa forma de ter um campo de comentários gratuito em seu site
 Esse post será lançado em breve, assim que eu tiver mais tempo para escrever.
+
+![ImagemBloco](static/assets/img/aboutpage.js.png)
