@@ -5,6 +5,9 @@ description: Gatsby é incrível e posso te provar.
 category: DEV
 background: "#2DA0C3"
 ---
+
+![AboutPageImage](static/assets/img/aboutpage.js.svg)
+
 A tecnologia PWA permite que você consiga nevegar por uma página web mesmo estando offline. 
 Uma vez que o usuário carregue o site, ele irá funcionar mesmo sem internet, pois todas as informações já foram servidas pela CDN. 
 
