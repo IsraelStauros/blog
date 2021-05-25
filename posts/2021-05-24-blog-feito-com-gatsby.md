@@ -1,17 +1,20 @@
 ---
-date: 2021-05-22 00:56
-title: Saiba como construí um blog PWA utilizando Gatsby
+date: 2021-05-24 21:39:43
+title: Veja Como Construir Um BLOG PWA Utilizando Gatsby
 description: Gatsby é incrível e posso te provar.
 category: DEV
 background: "#2DA0C3"
 ---
-Um Blog PWA significa que ele funciona offline. Uma vez que o usuário carregue o site, ele irá funcionar mesmo sem internet, pois todas as informações já foram servidas pela CDN. 
+A tecnologia PWA permite que você consiga nevegar por uma página web mesmo estando offline. 
+Uma vez que o usuário carregue o site, ele irá funcionar mesmo sem internet, pois todas as informações já foram servidas pela CDN. 
+
+Para isso bastou instalar um único plugin: `gatsby-plugin-offline`
 
 Quer fazer um teste?
 Desconecte-se e navegue tranquilamente nesse blog.
 
 # Tecnologias 
-  Veja as dependências do projeto:
+  Veja as dependências desse projeto:
 ```
 "dependencies": {
     "@hapi/bourne": "^1.3.2",
@@ -66,11 +69,9 @@ Com uma olhada mais atenta nos plugins instalados, você consegue perceber como 
 
 # Mas afinal de contas, o que é Gatsby?
 
-Gatsby é uma estrutura de código aberto baseada no React para a criação de sites e aplicativos. Você pode construir qualquer coisa que você possa imaginar utilizando Gatsby. 
+Gatsby é uma estrutura de código aberto baseada no React para a criação de sites e aplicativos. Você pode construir qualquer coisa que você possa imaginar utilizando Gatsby. Blogs como esse, portfólios, landingPage e até ecommerce.
 
-São mais de 2000 plug-ins que trazem desempenho, escalabilidade e segurança integrados por padrão em um projeto Gatsby.
-
-Tratando agora mais especificamente desse blog, resumidamente, o Gatsby faz a criação de páginas estáticas. O que é perfeito para projetos que não possuem muitas páginas e muitas interações distintas entre usuários. 
+Tratando agora mais especificamente desse blog, utilizei o Gatsby para a criação de páginas estáticas. Dessa forma, ganhei todos os beneficios de se ter um site SPG. O que é perfeito para projetos que não possuem muitas páginas e muitas interações distintas entre usuários. 
 
 Em junção com GraphQl, você tem nas mãos uma combinação poderosa.
 
@@ -78,7 +79,7 @@ Em junção com GraphQl, você tem nas mãos uma combinação poderosa.
 
 GraphQL é uma linguagem de consulta para APIs, que possibilita reduzir o tempo de execução para atender a essas consultas com seus dados existentes. 
 
-O GraphQL fornece uma descrição completa e compreensível dos dados em sua API, dá aos clientes o poder de pedir exatamente o que precisam e nada mais, torna mais fácil evoluir APIs ao longo do tempo. 
+O GraphQL fornece uma descrição completa e compreensível dos dados em sua API, dá aos clientes o poder de pedir exatamente o que precisam e nada mais, e isso torna mais fácil evoluir APIs ao longo do tempo. 
 
 Essa é uma tecnologia desenvolvida pelo Facebook. A gigante das redes sociais sofria muito com gerenciamento de dados. Antes do GraphQL, cada requisição exigia muitos recursos.
 
@@ -86,7 +87,7 @@ Imagine que um usuário faz um comentário, e um outro usuário responde.
 
 A antiga API do Facebook pedia uma pilha de dados totalmente desnecessários para executar aquela requisição em especifíco.  
 
-Veja abaixo como utilizei o GraphQL nesse blog para buscar somente os dados que são relevantes para o que euu  quero:
+Veja abaixo como utilizei o GraphQL nesse blog para buscar somente os dados que são relevantes para o que eu quero:
 
 ```
 exports.createPages = ({ graphql, actions }) => {
@@ -185,10 +186,10 @@ Agora vamos tratar do Netlify e do Netlify CMS.
 # Netlify & Netlify CMS: Hospede e gerencie seus sites gratuitamente
 
 Antes de tudo, entenda que o Netlify e o Netlify CMS são serviços diferentes. 
-Basicamente, o Netlify se conecta com sua conta Git e sobe código para a plataforma e hospeda seu site gratuitamente. 
+Basicamente, o Netlify se conecta com sua conta Git e sobe o código para a plataforma e hospeda seu site gratuitamente. 
 O Netlify CMS serve para que você possa gerenciar e escrever os seus posts de uma maneira mais simples. 
 
-Esse post foi escrito com Markdown, por motivos de que Markdown é legal, hahaha, mas poderia ter sido escrito no Netlify CMS de forma muito simples. Eu só precisaria fazer o build do Blog e pronto, abriria meu gerenciador e escreveria. 
+Esse post foi escrito com Markdown, por motivos de que Markdown é legal, hahaha, mas poderia ter sido escrito no Netlify CMS de forma muito simples. Eu só precisaria fazer o build do blog e pronto, abriria meu gerenciador e escreveria. 
 
 Para fazer funcionar é preciso instalar o plugin `gatsby-plugin-netlify-cms` e ter um arquivo `config.yml.`
 
@@ -243,12 +244,16 @@ collections:
       }
       - { label: "Body", name: "body", widget: "markdown" }
 ```
-O que está acontecendo aí é muito simples. Eu informo onde o CMS deve buscar os dados, no caso no meu repositório no Github, indico o caminho para meus arquivos e depois especifico quais dados ele deve buscar. 
+O que está acontecendo aí é muito simples. Eu informo onde o CMS deve buscar os dados -- no caso no meu repositório no Github --, indico o caminho para meus arquivos e depois especifico quais dados ele deve buscar. 
 
-Muita atenção com o config,yml, pois um simples erro vai te sugar horas infernais para reeditar esse arquivo até fazer funcionar.
+Muita atenção com o config.yml, pois um simples erro vai te sugar horas infernais para reeditar esse arquivo até fazer funcionar.
 
 # Conclusão
 
-Essa é a base sólida desse projeto, mas como você pode ver na relação de plugins das dependências, ainda tem muito mais para ser abordado em próximos posts. 
+Essa é a base sólida desse projeto, mas como você pode ver na relação de plugins das dependências, ainda tem muito mais para ser abordado. 
+
+Um outro elemento muito importante desse projeto é o styled-components, mas esse merece um outro post exclusivo.
+
+É bom ter você por aqui, obrigado.
 
 Até a próxima!

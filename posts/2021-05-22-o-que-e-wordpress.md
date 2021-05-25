@@ -1,6 +1,6 @@
 ---
-date: 2021-05-22 20:08
-title: O que é wordpress?
+date: 2021-05-24 20:08:43
+title: O Que é WordPress?
 description: Conheça o CMS que revolucionou a internet.
 category: DEV
 image: static/assets/img/wordpress.png

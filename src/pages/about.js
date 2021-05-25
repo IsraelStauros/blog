@@ -13,7 +13,7 @@ const AboutPage = () => (
       description="Página que conta um pouco da história do autor desse blog"
     />
     <MainContent>
-      <h1>O AUTOR</h1>
+      <h1>Sobre o Autor</h1>
       <StaticImage
           src="../images/foto-de-perfil.jpg"
           alt="Foto do autor do blog"
@@ -36,7 +36,7 @@ const AboutPage = () => (
       <p>
         Também estou utilizando um dominío grátis da freenom,
         hospedagem grátis da Netlify e integrei gratuitamente ao Netlify CMS,
-        por onde posso escrever os posts de maneira mais descomplicada. 
+        por onde posso escrever os posts de maneira descomplicada. 
       </p>
 
       <p>
@@ -46,20 +46,22 @@ const AboutPage = () => (
       
       
       <p>
-        Entrei no mundo da programação meio que por acaso. Inicialmente eu apenas precisava de um site para um empreendimento 
-        bem especifíco que eu havia no iniciado no markerting digital, e como tem coisas que eu mesmo gosto de fazer, 
-        fui atrás de aprender como utilizar o wordpress para criar o site de que precisava. 
+        Entrei no mundo da programação meio que por acaso. 
+        Inicialmente eu apenas precisava de um site para um empreendimento 
+        bem especifíco que eu havia iniciado no markerting digital, e como tem coisas que eu mesmo gosto de fazer, 
+        fui atrás de aprender como utilizar o WordpPress para criar o site de que precisava. 
       </p>
 
       <p>
-        Todos os dias eu assistia um tutorial sobre alguma relacionada a criação de sites.
-        Quando me dei conta, os algoritimos do facebook e do youtube começaram a recomendar 
+        Todos os dias eu assistia um tutorial sobre alguma coisa relacionada a criação de sites.
+        Quando me dei conta, os algoritimos do youtube começaram a recomendar 
         conteúdos cada vez mais relacionados com programação.
         Você, caro leitor, já deve ter percebido onde isso veio parar.
       </p>
 
       <p>
-        Gostei tanto dos conteúdos sugeridos, que comecei estudar programação como hobby e em pouco tempo, o que era apenas uma distração, 
+        Gostei tanto dos conteúdos sugeridos, que comecei estudar programação como hobby e pouco tempo depois, 
+        o que era apenas uma distração, 
         se transformou em uma aspiração genuína de ingressar nesse mundo do desenvolvimento web de forma profissional.  
       </p>
 
@@ -77,17 +79,17 @@ const AboutPage = () => (
 
       <p>
         Entender um pouco de marketing me parece ser um diferencial 
-        bem bacana para o currículo de um desenvolvedor que oferece por o negócio de alguém na internet,
-        onde a competição por visibilidade é bastante acirrada.
+        bem bacana para um desenvolvedor que oferece por o negócio de alguém na internet,
+        onde a competição por visibilidade é bastante acirrada, e uma boa comunicação faz total diferença.
       </p>
 
       <p>
-        Também gosto de história, filosofia, religião comparada, astrologia e astronomia. 
+        Também gosto de história, filosofia e astronomia. 
         No meu tempo livre, além de aprender sobre programação, também me dedico á leitura desses assuntos.
       </p>
 
       <p>
-        Meu foco atual é o de oferecer soluções rápidas e eficientes para micro, pequenos e médios empreendedores 
+        Meu foco atual é o de oferecer soluções rápidas e eficientes para micro e pequenos empreendedores 
         que queiram digitalizar seus empreendimentos. 
       </p>
       
@@ -99,9 +101,9 @@ const AboutPage = () => (
       </p>
 
       <p>
-        Então tento ser o mais prático possível na resolução de problemas e não sou do tipo de 
+        Tento ser o mais prático possível na resolução de problemas e não sou do tipo de 
         programador que fica empurrando soluções complexas para questões que podem ser resolvidas de
-        maneira simples, com ferramentas mais descomplicadas. Viva o WordPress!
+        maneira simples com ferramentas mais acessíveis. Amo o WordPress!
       </p>
         
 

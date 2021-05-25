@@ -1,5 +1,5 @@
 ---
-date: 2021-05-22 20:18
+date: 2021-05-24 19:18:43
 title: Quais tipos de sites existem?
 description: Conheça os princpais tipos de página web.
 category: DEV
