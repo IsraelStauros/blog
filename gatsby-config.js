@@ -32,14 +32,6 @@ module.exports = {
         shortname: `https-staurosdevelopment-tk`
     }
     },
-    {
-      resolve: "gatsby-plugin-social9-socialshare",
-      options: {
-        content:  "d58dc743e0da497da2cfcfcbdf77fd75",
-        async: true,
-        defer: true
-      }
-    },
     
     {
       resolve: `gatsby-source-filesystem`,
