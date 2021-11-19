@@ -3,7 +3,7 @@
 const links = [
     {
         label: "WhatsappSquare",
-        url: `https://wa.me/message/SOCRNECJPO3SA1`,
+        url: `https://api.whatsapp.com/send?phone=+5571983876555&text=Olá.`,
 
       },
 
@@ -25,8 +25,8 @@ const links = [
       },
 
       {
-        label: "Pages",
-        url: `https://staurosdevelopment.tk/`
+        label: "Site",
+        url: `https://staurosdev.com.br/`
 
     },
 ]
