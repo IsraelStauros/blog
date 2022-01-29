@@ -1,15 +1,14 @@
 ---
-date: 2021-05-24 20:08:43
 title: O Que é WordPress?
 description: Conheça o CMS que revolucionou a internet.
+date: 2021-05-24 20:08:43
+image: assets/img/wordpress.svg
 category: DEV
-image: static/assets/img/wordpress.png
 background: "#2DA0C3"
 ---
+# Você sabe o que é WordPress e como ele pode te ajudar?
 
-# Você sabe o que é WordPress e como ele pode te ajudar? 
-
-![Logotipo do wordpress](static/assets/img/wordpress.png)
+![Logotipo do wordpress](assets/img/wordpress.svg)
 
 Wordpress é uma plataforma de gerenciamento de blogs e sites. Representou uma revolução no modo de gerir e construir websites. 
 
@@ -23,7 +22,11 @@ Bom... agora que sabemos do que se trata o wordpress, resta saber como essa plat
 
 # Vantagens do WordPress
 
-![Template WordPress](static/assets/img/videograph.jpg.webp)                              
+![Template WordPress](static/assets/img/videograph.jpg.webp)
+
+```
+                          
+```
 
 Para início de conversa, o wordpress.org é uma plataforma gratuita. E ter acesso á um CMS tão robusto de forma gratuita, já é uma grande vantagem.
 
@@ -42,8 +45,8 @@ Milhares de empreendedores têm usado o wordpress como uma solução profissiona
 Para usúarios que não tenham conhecimento de programação, tentar fazer algo que fuja um pouco do escopo de geral, pode ser algo complicado. 
 
 Então aí talvez seja necessário investir em alguns plugins pagos, que irão automatizar algumas funções de maneira bem mais simples.
- 
-# Conclusão 
+
+# Conclusão
 
 Caso você tenha interesse em ter um site rápido, moderno e feito em pouco tempo, O Wordpress é uma excelente alternativa. 
 
